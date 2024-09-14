@@ -32,16 +32,22 @@
 
             $qtd = $res -> num_rows;
 
+            $user = false;
+
             if($qtd > 0)
             {
                 while($row = $res->fetch_object())
                 {
                     if($row->login == $login_user && $row->password == $password_user)
-                        print "Usuario Encontrado";
-                    else
-                        print "Usuario Não Encontrado";
+                        $user = true;
                 }
             }
+
+            if($user == true)
+                print "Usuario Encontrado";
+            else
+                print "Usuario Não Encontrado";
+
         break;
 
         case 'editar':
