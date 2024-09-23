@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-body nav {
+nav {
   display: flex;
   width: 100vw;
   justify-content: space-around;
@@ -19,60 +19,61 @@ body nav {
   align-items: center;
   height: 15vh;
 }
-body nav a {
+nav a {
   color: white;
   text-decoration: none;
 }
-body nav a:hover {
+nav a:hover {
   color: white;
   -webkit-text-decoration: underline 2px;
           text-decoration: underline 2px;
 }
-body div {
+div {
   height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-body .h1-form {
+.h1-form {
   text-align: center;
   margin-top: 10vh;
   margin-bottom: 20px;
 }
-body form {
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body form label {
+form label {
   margin-top: 10px;
   margin-left: 4px;
 }
-body form input[type=text] {
+form input[type=text] {
   border-radius: 8px;
   padding: 5px 5px;
   border: 1px solid black;
 }
-body form input[type=password] {
+form input[type=password] {
   border-radius: 8px;
   text-indent: 0px;
   padding: 5px 5px;
   border: 1px solid black;
   margin-bottom: 10px;
 }
-body form input[type=submit] {
+form input[type=submit] {
   color: rgb(51, 51, 255);
   margin: 0 auto;
   font-weight: bold;
   font-size: 15px;
-  width: 9vw;
-  height: 9vh;
+  width: 7vw;
+  height: 7vh;
   border-radius: 10px;
   border: 3px solid rgb(51, 51, 255);
   background-color: white;
+  transition: all 0.3s;
 }
-body form input[type=submit]:hover {
+form input[type=submit]:hover {
   cursor: pointer;
   background-color: rgb(51, 51, 255);
   color: white;
@@ -125,4 +126,4 @@ body table #botoes {
 }
 body table tr:nth-child(odd) {
   background-color: #cfcfcf;
-}/*# sourceMappingURL=style.css.map */
+}/* # sourceMappingURL=style.css.map */
